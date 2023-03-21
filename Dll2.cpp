@@ -3,12 +3,12 @@
 #include "Dll2.h"
 #include <wchar.h>
 
-__declspec(dllexport) int group()
+__declspec(dllexport) int getgroup()
 {
 	return int(581220);
 }
 
-__declspec(dllexport) void name(wchar_t* ptr)
+__declspec(dllexport) void getname(wchar_t* ptr)
 {
     const wchar_t* str = L"Малиновский Александр Алексеевич";
     wcscpy(ptr, str);
